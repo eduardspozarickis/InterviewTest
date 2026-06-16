@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InterviewTest</string>
+
+    <string name="home_update_odds">Update Odds</string>
+</resources>

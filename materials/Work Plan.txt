@@ -1,0 +1,40 @@
+Work plan
+
+1. Preparation
+------------------------------------
+1) Investigate task;
+2) Compile source code;
+3) Investigate source code;
+
+
+2. Planning
+------------------------------------
+According to task required:
+1) Adjust list items size;
+2) Adjust list items content: to also show sell In, odds and image (fetch image from provided url);
+3) Sort list by sell In;
+4) Add button to call existing function calculateOdds(), update list to show updated content;
+5) code refactor to make it more maintainable.
+
+Current code has "God-activity" which contains UI, data and business logic.
+Target - make clean architecture to separate data source, logic and UI which will make code simpler, readable, testable and easier to scale.
+
+
+3. Development
+------------------------------------
+Available time - 4h (including pauses, not including preparation, planning).
+
+Assumption: keep xml UI to show my abilities in xml. Compose usage example could be viewed in other task made during interviews:
+https://github.com/eduardspozarickis/UbiquitiTestAssignment
+
+Priorities:
+1) Clean architecture carcass (data, domain, ui), repository and UseCase pattern to tie architecture layers;
+1.1) Dependency Injection implementation;
+2) Move data to RemoteRepository;
+3) Create ViewModel for MainActivity to retrieve data, call calculateOdds() function;
+4) Update xml UI to fix items sizes and show new content (keeping in mind RtL support);
+5) Repository, UseCase, ViewModel unit-testing;
+6) Create version catalog in toml file to keep and maintain libraries;
+7) Update libraries;
+8) Create offline version using Room database.
+
